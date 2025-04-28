@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        
+        /*Essa pseudo classe muda a cor do link quando ele for visitado*/
+        a:visited{
+            color: darkred;
+        }
+        /*Deixa o link o underline quando passa o mouse em cima*/
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        /*Quando algo é clicado ele ficará amarelo*/
+        a:active{
+            color: yellow;
+        }
+        li {
+            text-decoration: none;
+        }
+
+        /*Pseudo Elementos, os "::" significa = "antes e depois te todos os elementos*/
+
+        .importante::before{
+            content: '=>';
+        }
+        .importante::after{
+            content: '<=';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="importante">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/">Site do CursoEmVideo</a></li>
+    </ul>
+    
+</body>
+</html>

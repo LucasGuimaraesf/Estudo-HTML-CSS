@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            border: 10px solid red; /*Shorthand - simplificando o codigo acima (NA HORDEM DO RELÓGIO)*/
+
+            /*Colocando um espaço no padding*/
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            padding: 10px 10px 10px 10px; /*Shorthand - simplificando o codigo acima (NA ORDEM DO RELÓGIO)*/
+            padding: 10px; /*Significa que todas as direções terão padding de 10px*/
+
+            /*Configurando a MARGIN - Sempre no sentido horário*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            margin: 20px 10px 10px 10px; /*Shorthand*/
+            margin: 20px auto 20px auto; /*Shorthand - as laterais serão automatizadas dependendo do tamanho da tela, o 20px determina a distancia de cima e de baixo*/
+
+            /*Como centralizar a caixa no meio da tela*/
+            margin: auto;
+            
+            /*Adicionando o outline - traços */
+            outline-width: 50px;
+            outline-style: solid;
+            border-color: rgb(120, 218, 82);
+
+            outline:5px dashed salmon; /*Shorthand*/
+            
+
+
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        h2{
+            text-align: center;
+            background-color: goldenrod;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+
+            border-width: 10px;
+            border-style: dashed;
+            border-color: rgb(166, 255, 0);
+
+            padding-top: 20px;
+           
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <h2>Text-align: center;</h2>
+    
+</body>
+</html>

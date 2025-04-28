@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #1C8B83,#285956,#213330,#2F121A);
+            
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            align-items: flex-end;
+
+        }
+        nav{
+            text-align: center;
+            justify-content: space-between;
+            /*Deixa os itens separados em espaços iguais*/
+            display: flex;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        article > aside{
+            background-color: rgba(211, 211, 211, 0.445);
+            color: red;
+            text-align: end;
+            margin: 10px;
+        }
+       
+        #noticias{
+            background-color: lightgray;
+            
+        }
+        #back1{
+            background-color: aqua;
+            font-size: 2em;
+        }
+        #back02{
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Clientes</a>
+            <a href="#">Menu</a>
+
+        </nav>
+    </header>
+    <main>
+        <p>O main é a parte principal</p>
+        <section id="assuntos">
+            <h2>Tigrinho fazendo pessoas ficarem milhonárias</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nesciunt nisi. Officiis reiciendis facere est! Est assumenda quod ullam commodi voluptate dicta maiores dolorum? Ducimus itaque eligendi maxime praesentium perferendis.</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laudantium provident pariatur ut, saepe natus ducimus, fuga, alias amet quidem voluptates non deleniti. Ratione, fuga iusto deserunt corporis reprehenderit soluta?</p>                
+                <aside>
+                    <p><meta name="José da Silva">- Escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Queimadas na Amazônia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus esse in exercitationem nihil accusamus aliquam voluptates veniam nemo saepe? Corporis in delectus atque ea vero cumque ipsum, nesciunt nisi?</p>
+                <p><a href="#">Clique aqui para saber mais</a></p>
+            </article>
+            
+
+        </section>
+        <section id=>
+                <article id="back1">
+                    <h2>Direção indevida de condutores</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam at quo architecto nisi quam nostrum. Reprehenderit aperiam placeat excepturi sunt sint, facilis hic. Quidem libero amet neque quibusdam inventore quam.</p>
+                </article>
+                <article id="back02">
+                    <h2>Pessoas aprovadas em estágios</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas unde tempore tenetur eaque temporibus. Sequi nemo fugit ullam praesentium ratione quisquam, iste exercitationem veritatis doloribus! Reiciendis dicta veritatis repudiandae?</p>
+                </article>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Lucas Guimarães</p>
+        <p>Para adicionar a logo e informações</p>
+    </footer>
+</body>
+</html>

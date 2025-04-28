@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* em HTML é ID = em CSS é # - (USADO EM APENAS UM ELEMENTO/POR PÁGINA)
+
+    em HTML é ClASS = em CSS É . (ponto) - (USADO EM DIVERSOS ELEMENTO/POR PÁGINA)
+*/
+
+
+
+body{
+    font-family: "Roboto Mono", monospace;
+    background-color: antiquewhite;
+
+}
+h1#principal{
+    color: rgb(0, 255, 128);
+    text-align: center;
+    background-color: white;    
+}
+.basico{
+    color: rgb(0, 195, 255);
+    text-align: center;
+    
+}
+.intermediario{
+    color: black;
+}
+
+.avancado{
+    color: rgb(110, 1, 1);
+}
+
+/*USANDO O <SPAIN>*/
+.intext{
+    color: rgb(255, 40, 12);
+    font-size: 40px;
+}
+
+.destaque{
+    background-color: rgb(240, 240, 105);
+}
+
+h1{
+    color: brown;
+}
+
+h2{
+    color: blue;
+}
+p{
+    text-indent: 30px;
+}

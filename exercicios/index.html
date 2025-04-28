@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        div{
+            color: black;
+        }
+        div > p {
+            /*Esse display esconde o Conteudo*/
+            display: none;
+        }
+        div:hover > p{
+            font-size: 40px;
+            color: brown;
+            /*Esse display mostra o Conteudo*/
+            display: block;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Testando div com Hover e filhas</h1>
+    <div>
+        <button class="btn">Clique aqui para visualizar</button>
+        <p>Você agora visualiza</p> 
+    </div>
+    
+</body>
+</html>
