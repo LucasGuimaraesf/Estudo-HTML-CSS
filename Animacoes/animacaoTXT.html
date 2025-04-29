@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amimação Texto</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            background-color: black;
+        }
+    
+
+        header{
+            background-color: rgb(0, 0, 0);
+            font-size: 2em;
+            color: white;
+            font-family: "Fascinate", system-ui;
+            padding: 10px;
+
+            /*Adicionando o degrade*/
+            background: linear-gradient(45deg, #9D00FF, #00FFF7, #FF007F, #F8FF00);
+            background-size: 400% 100%;
+
+            /*Aplicando a animação -> animation: (nome da KeyFrame + Tempo de conclusão da animação + linear(mesma velocidade em todos os momentos + definindo "infinite" que vai deixar a animação infinita + "alternate" fica alternando entre o inicio e o fim)*/
+            animation: degrade 10s linear infinite alternate;
+
+            /*Aplicando a animação no TEXTO e retirando ela da Background*/
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text > p{
+            font-family: "Fascinate", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 100px;
+            padding-top: 100px;
+
+            /*Adicionando o degrade*/
+            background: linear-gradient(45deg, #9D00FF, #00FFF7, #FF007F, #F8FF00);
+            background-size: 400% 100%;
+
+            /*Aplicando a animação -> animation: (nome da KeyFrame + Tempo de conclusão da animação + linear(mesma velocidade em todos os momentos + definindo "infinite" que vai deixar a animação infinita + "alternate" fica alternando entre o inicio e o fim)*/
+            animation: degrade 10s linear infinite alternate;
+
+            /*Aplicando a animação no TEXTO e retirando ela da Background*/
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /*Aplicando as KeyFrames das CSS*/
+        @keyframes degrade {
+            /*Primeiro determinamos o inicio da animação*/
+            0%{
+                background-position-x: 0%;
+            }
+            100%{
+                background-position-x: 400%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Clique para interagir!</p>
+    </header>
+    <!--O contenteditable=true vai permitir que o usuário digite o texto-->
+    <div contenteditable="true" class="text">
+        <p>Bem-Vindo!</p>
+    </div>
+    
+</body>
+</html>

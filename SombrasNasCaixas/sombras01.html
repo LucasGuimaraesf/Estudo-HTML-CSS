@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Sombras</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        
+        body{
+            background-color: lightgray
+        }
+        header{
+            background-color: lightcyan ;           
+            
+        }
+        nav{
+            justify-content: space-between;
+            display: flex;
+            text-align: center;
+            padding: 20px;
+            /*Adicionando uma sombra - A sombra É CINZA*/
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
+        }
+        #esporte{
+            background-color: rgba(255, 0, 0, 0.664);
+        }
+        .lancamentos{
+            justify-content: space-between;
+            display: flex;
+            text-align: center;
+            padding: 10px;
+        }
+        .mainlancamento{
+            background-color: black;
+            color: white;
+            border-radius: 15px
+
+        }
+        .mainlancamento > h2{
+            font-family: "Tomorrow", sans-serif;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.315), black);
+            background-size: 400% 100%;
+            animation: degrade 10s linear infinite alternate;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes degrade {
+            0%{
+                background-position-x: 0%;
+            }
+            100%{
+                background-position: 400%;
+            }
+        }
+        footer{
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            height: 30px;
+            text-align: center;
+
+        }
+
+        /*Fazendo uma DIV BOLA*/
+        div#bola{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <p><img src="#" alt="LogoSite"></p>
+        <p><a href="#">Produtos</a></p>
+        <p><a href="#">Lançamentos</a></p>
+        <p><a href="#">Login</a></p>
+        <p><a href="#">Menu</a></p>
+        </nav>
+    </header>
+    <main>
+        <section id="esporte">
+            <article>
+                <h2>Últimas notícias da F1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum hic quibusdam illum numquam eum labore voluptatum asperiores qui earum ratione aliquam libero eaque reprehenderit ipsam iusto quos, incidunt voluptates!</p>
+            </article>
+            <article>
+                <h2>Vestapen na liderança</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis assumenda sapiente nesciunt itaque corporis harum qui, amet, at iure eaque ullam nemo neque id porro cumque similique, minima quo maxime!</p>
+            </article>
+        </section>
+        <section id="produtos">
+            <article>
+                <h2>Produtos mais vendidos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe incidunt laudantium molestiae, asperiores distinctio nam recusandae. Suscipit doloremque voluptatem deleniti possimus quo, animi nulla eligendi maxime delectus molestias quam cum.</p>
+            </article>
+            <article>
+                <div class="mainlancamento">
+                <h2>Lançamentos</h2>
+                <ul class="lancamentos">
+                    <li><img src="#" alt="Sorvete"></li>
+                    <li><img src="#" alt="Whey Chocolate"></li>
+                    <li><img src="#" alt="Skate"></li>
+                    <li><img src="#" alt="Tênis"></li>
+                </ul>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Site feito por Lucas Guimarães</p>
+    </footer>
+    <div id="bola"></div>
+
+    
+</body>
+</html>
