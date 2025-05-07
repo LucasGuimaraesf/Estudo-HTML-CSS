@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execícios Estágio</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            text-align: center;
+
+        }
+        .secpadrao{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        input{
+            width: 100px;
+            
+        }
+        button:hover{
+            background-color: #007BFF;
+        }
+        #nomeCompleto{
+            background-color: white;
+            padding: 5px 100px 0px ;
+            margin: 5px;
+            display: flexbox;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios Estágio</h1>
+    <button type="button" onclick="btn()"> Clique aqui</button>
+    <section class="secpadrao">
+        <h2>Somando números:</h2>
+        <p>Digite o primeiro valor:</p>
+        <input type="number" id="n1">
+        <p>Digite o segundo valor:</p>
+        <input type="number"  id="n2">
+        <p>
+        <button type="button" onclick="resp()">Calcular</button>
+        </p>
+    </section>
+    <section>
+        <p>Digite seu nome:
+            <input type="text" id="nome">
+
+        </p>
+        <p>Digite seu sobrenome:
+            <input type="text" id="sobrenome">
+        </p>
+        <p>Seu nome completo é:
+            <span id="nomeCompleto"></span>
+        </p>
+        <button onclick="mostrarNomeCompleto()">Mostrar nome completo</button>
+    </section>
+    <section>
+        <h2>Exemplo de document.write</h2>
+        
+        <button onclick="write()">Iniciar Teste</button>
+        <p id="mensagem"></p>
+    </section>
+
+    
+    
+</body>
+<script>
+    function btn(){
+    var nome = window.prompt("Qual é o seu nome?")
+    window.alert("É um grande prazer te conhecer, " + nome)
+    }
+
+        //Somando dois números e respondendo no Alert
+    function resp(){
+        var n1 = document.getElementById('n1').value;
+        var n2 = document.getElementById('n2').value;
+        if (n1 !== '' && n2 !== '') {
+        var resultado = Number(n1) + Number(n2); // Faz a conversão para número
+        window.alert(`A soma de ${n1} + ${n2} é ${resultado}`);
+         
+        // Limpa os campos após o cálculo
+        document.getElementById('n1').value = '';
+        document.getElementById('n2').value = '';
+        } else {
+            window.alert("Erro! Você não digitou os números. Refaça a soma.")
+        }
+    }
+    
+    //Nome e sobrenome:
+    function mostrarNomeCompleto(){
+        var nome = document.getElementById('nome').value;
+        var sobrenome = document.getElementById('sobrenome').value;
+        var completo = nome  +' '+ sobrenome;
+        document.getElementById('nomeCompleto').innerText = completo;
+    }
+    
+    //Document.Write
+    function write(){
+        var write01 = window.prompt("Qual é o seu nome?");
+        document.getElementById('mensagem').innerText = `Muito prazer ${write01}`;
+    }
+
+    /*Testes no Terminal
+    > function numero (){
+    ... var a = "Lucas";
+    ... var b = "Guimaraes";
+    ... return a + " " + b;
+    ... }
+
+    > console.log(numero());
+    Lucas Guimaraes
+    Se nao tiver o "return" o JS vai considerar como vazio as variáveis*/
+
+</script>
+</html>
