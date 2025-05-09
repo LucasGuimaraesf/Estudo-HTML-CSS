@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px;
+        }
+        .footer-container {
+            max-width: 1200px; /*
+            Mesmo que a tela seja maior que isso, o contêiner não vai ultrapassar 1200px.
+            Em telas menores, ele vai se adaptar (ficar menor que 1200px).*/
+            
+
+            margin: 0 auto;
+            /* 
+            0 no topo e na base (vertical).
+             "auto" nas laterais (horizontal), o que centraliza o contêiner horizontalmente na tela, desde que ele tenha uma largura definida (max-width ou width).*/
+
+            display: flex; 
+            /*Isso transforma os filhos diretos do .footer-container em “itens flexíveis”, permitindo que eles sejam alinhados de forma eficiente.*/
+
+            flex-wrap: wrap;
+            /*Permite que os itens flexíveis quebrem para a próxima linha quando não houver espaço suficiente.
+            Sem isso, eles ficariam todos em uma única linha, podendo “vazar” do contêiner.*/
+
+            justify-content: space-between;
+            /*Distribui os itens flexíveis horizontalmente, deixando:
+            O primeiro encostado na esquerda.
+            O último encostado na direita.
+            Espaços iguais entre os itens no meio.*/
+        }
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+        .footer-section h4 {
+            margin-bottom: 18px;
+            font-size: 18px;
+            border-bottom: 2px solid #555; /*A linha embaixo do "Sobre Nós*/
+            padding-bottom: 10px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-section ul li a:hover {
+            color: #fff;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Ola teste</h1>
+
+    <!-- Conteúdo principal aqui -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>A Fundação Getulio Vargas é reconhecida por gerar conhecimento e o desenvolvimento econômico e social por meio de educação, pesquisa, consultoria e análise de índices econômicos, se posicionando como uma instituição inovadora, tanto para sua própria Comunidade, como para a sociedade em geral.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Email: contato@empresa.com</li>
+                    <li>Telefone: (21) xxxx-xxxx</li>
+                    <li>Endereço: Praia de Botadogo, 186 - Rio de Janeiro</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/fgv_epge/">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/school/fgv-epge/?originalSubdomain=br">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 FGV. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
