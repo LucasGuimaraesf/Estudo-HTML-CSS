@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*Tamanho minimo*/
+            max-width: 800px; /*Tamanho maximo*/
+            margin: auto; /*Colocando isso o conteúdo sempre será o centro, mas sozinho nao quebrará*/
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit in modi omnis atque perspiciatis nesciunt, accusamus officiis eaque hic architecto. Vero, unde culpa cum odio assumenda dicta sunt minima. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quas distinctio ut laudantium voluptates repudiandae nam vero similique minus odit dignissimos deserunt laborum, facilis adipisci. Libero sint ipsam animi facere. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam natus modi quaerat, et aspernatur ea recusandae voluptates doloribus dignissimos dolorem placeat, sapiente nisi ad porro dolore? Perspiciatis quas repellendus eligendi.</p>
+        <!--Adicionando a mudança de img GRANDE para Pequena de acordo com a largura da tela-->
+        <picture>
+            <source media="(max-width:600px)" srcset="imagens/irina-blok-pq.jpg" >
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores magnam quasi voluptatum minima tempore, dicta, repudiandae consectetur ea adipisci blanditiis quaerat eveniet repellendus. Non in porro repellat, minima sequi perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptate nesciunt earum veritatis dignissimos est repudiandae tempora molestiae distinctio iure harum, velit pariatur quam hic illo. Labore debitis corporis expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione inventore quisquam vel repellat minima, quas asperiores, voluptatibus maxime temporibus quod nemo sit earum iure blanditiis veniam deleniti autem ea.</p>
+    </main>
+    
+</body>
+</html>
